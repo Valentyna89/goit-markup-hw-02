@@ -1,0 +1,80 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --primary-white-color: #ffffff;
+}
+
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Лого */
+
+.logo-web:hover,
+.logo-web:focus {
+    color: var(--accent-color);
+}
+
+.logo-web {
+    color: var(--accent-color);
+}
+.logo-studio {
+    color: var(--title-text-color);
+}
+
+/* Header without logo */
+
+.site-nav {
+    color: var(--title-text-color);
+}
+
+.site-nav:hover,
+.site-nav:focus {
+    color: var(--accent-color); 
+}
+
+.header .contacts {
+    color: var(--primary-text-color);
+}
+.header .contacts:hover {
+    color:var(--accent-color);
+}
+
+/* Hero */
+
+.hero-title {
+    color: var(--title-text-color); /*поменять на белый*/
+}   
+
+/* Section */
+
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* Features */
+
+.feature-list .title {
+    color: var(--title-text-color);
+}
+
+/* Our team */
+
+.team-list .title {
+    color: var(--title-text-color);
+}
+
+/* Portfolio */
+
+/* Footer */
+
+
+
+
