@@ -36,18 +36,21 @@ ul {
     color: var(--title-text-color);
 }
 
-.site-nav:hover,
-.site-nav:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
     color: var(--accent-color); 
 }
-
-.header .mail-color {
+.site-nav .link.current {
     color: var(--accent-color);
 }
-.header .tel-color {
+
+.contacts .mail-color {
+    color: var(--accent-color);
+}
+.contacts .tel-color {
     color: var(--primary-text-color);
 }
-.header .contacts:hover {
+.contacts .contacts:hover {
     color:var(--accent-color);
 }
 
