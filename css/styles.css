@@ -3,6 +3,7 @@
     --title-text-color: #212121;
     --accent-color: #2196f3;
     --primary-white-color: #ffffff;
+    --secondary-bg-color: #2F303A;
 }
 
 
@@ -40,7 +41,10 @@ ul {
     color: var(--accent-color); 
 }
 
-.header .contacts {
+.header .mail-color {
+    color: var(--accent-color);
+}
+.header .tel-color {
     color: var(--primary-text-color);
 }
 .header .contacts:hover {
@@ -52,6 +56,10 @@ ul {
 .hero-title {
     color: var(--title-text-color); /*поменять на белый*/
 }   
+.button {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
 
 /* Section */
 
@@ -73,8 +81,40 @@ ul {
 
 /* Portfolio */
 
+.button-list .button-hover {
+    color: #212121;
+}
+.button-hover:hover {
+    color: var(--accent-color);
+}
+.button-list .text-color {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+.portfolio-type {
+    color: var(--primary-text-color);
+}
+.studio-color,
+.portfolio-color {
+    color: var(--accent-color);
+}
+.portfolio-title {
+    color: var(--title-text-color);
+} 
+
 /* Footer */
 
+.footer {
+    background-color: var(--secondary-bg-color);
+}
 
-
+.footer .logo-studio {
+    color: var(--primary-white-color);
+}
+.address {
+    color: var(--primary-white-color);
+}
+.footer .contacts {
+    color: rgba(255, 255, 255, 0.6);
+}
 
