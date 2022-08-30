@@ -84,22 +84,18 @@ ul {
 
 /* Portfolio */
 
-.button-list .button-hover {
+.portfolio .button-hover {
     color: #212121;
 }
 .button-hover:hover {
     color: var(--accent-color);
 }
-.button-list .text-color {
+.portfolio .text-color {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
 .portfolio-type {
     color: var(--primary-text-color);
-}
-.studio-color,
-.portfolio-color {
-    color: var(--accent-color);
 }
 .portfolio-title {
     color: var(--title-text-color);
