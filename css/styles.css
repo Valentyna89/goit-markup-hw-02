@@ -207,20 +207,22 @@ ul {
     background-color: #2F303A;
     line-height: 1.7;
 }
+
 .footer a {
     text-decoration: none;
+    font-style: normal;
 }
 
 .footer .logo-studio {
     color: var(--primary-white-color);
 }
+
 .address {
-    color: var(--primary-white-color);
-    font-style: normal;
+    color: var(--primary-white-color); 
 }
+
 .footer .contacts {
     color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
 }
 
 .footer .contacts:hover,
