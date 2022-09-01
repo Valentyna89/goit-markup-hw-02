@@ -1,8 +1,10 @@
 :root {
     --primary-text-color: #757575;
+    --secondary-text-color: rgba(255, 255, 255, 0.6);
     --title-text-color: #212121;
     --accent-color: #2196f3;
     --primary-white-color: #ffffff;
+    --bg-color: #2f303a;
     --secondary-bg-color: #f5f4fa;
 }
 
@@ -12,20 +14,24 @@ body {
     background-color: var(--primary-white-color);
     letter-spacing: 0.03em;
     font-size: 14px;
-    font-weight: 400;
 }
 
 ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Лого */
 
 .logo {
+    color: var(--title-text-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.19;
 }
 
 .logo-web:hover,
@@ -36,15 +42,8 @@ ul {
 .logo-web {
     color: var(--accent-color);
 }
-.logo-studio {
-    color: var(--title-text-color);
-}
 
 /* Header without logo */
-
-.header a {
-    text-decoration: none;
-}
 
 .link {
     color: var(--title-text-color);
@@ -67,7 +66,6 @@ ul {
 .contacts {
     color: var(--primary-text-color);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -79,8 +77,12 @@ ul {
 
 /* Hero */
 
+.hero {
+    background-color: var(--bg-color);
+}
+
 .hero-title {
-    color: var(--title-text-color); /*поменять на белый*/
+    color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -101,29 +103,20 @@ ul {
     cursor: pointer;
 }
 
-/* Section-team */
-
-.section-team {
-    background-color: var(--secondary-bg-color);
-}
-
-.section-team-title {
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
+.button-primary:hover,
+.button-primary:focus {
+    color: var(--primary-white-color);
+    background-color: #188ce8;
 }
 
 /* Features */
 
-.section-feature-title {
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
+
 .feature-list .title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -132,9 +125,9 @@ ul {
     text-transform: uppercase;
 }
 
-.feature-list p {
-    font-size: 14px;
-    line-height: 1.7;
+.feature-list .feature-text {
+    font-weight: 400;
+    line-height: 1.71;
 }
 
 /* Section Photo */
@@ -143,46 +136,59 @@ ul {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.17;
     text-align: center;
 }
 
 /* Our team */
 
+.team {
+    background-color: var(--primary-white-color);
+}
+
 .section-team {
-    background-color: #f5f4fa;
+    background-color: var(--secondary-bg-color);
     text-align: center;
 }
+
+.section-team-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
 .team-list .team-name {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.19;
 }
 
-.team-list p {
+.team-list .team-position {
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.19;
 }
 
 /* Portfolio */
-
-.portfolio a {
-    text-decoration: none;
-}
 
 .button-hover {
     color: var(--title-text-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.63;
     cursor: pointer;
 }
 .button-hover:hover,
 .button-hover:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .portfolio-title {
@@ -196,18 +202,17 @@ ul {
 .portfolio-type {
     color: var(--primary-text-color);
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.88;
 }
 
 /* Footer */
 
 .footer {
-    background-color: #2f303a;
-    line-height: 1.7;
+    background-color: var(--bg-color);
+    line-height: 1.71;
 }
 
-.footer a {
-    text-decoration: none;
+.address {
     font-style: normal;
 }
 
@@ -215,12 +220,13 @@ ul {
     color: var(--primary-white-color);
 }
 
-.address {
+.address .address-google-maps {
     color: var(--primary-white-color);
 }
 
 .footer .contacts {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--secondary-text-color);
+    font-weight: 400;
 }
 
 .footer .contacts:hover,
