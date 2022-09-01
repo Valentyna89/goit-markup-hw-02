@@ -112,10 +112,15 @@ a {
 /* Features */
 
 .visually-hidden {
-    position: absolute; 
-    clip: rect(0 0 0 0); 
-    width: 1px; 
-    height: 1px; 
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
     margin: -1px;
 }
 
@@ -169,14 +174,13 @@ a {
 }
 
 .team-list .team-position {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
 }
 
 /* Portfolio */
 
-.button-hover {
+.button-filter {
     color: var(--title-text-color);
     font-family: inherit;
     font-weight: 500;
@@ -184,8 +188,9 @@ a {
     line-height: 1.63;
     cursor: pointer;
 }
-.button-hover:hover,
-.button-hover:focus {
+
+.button-filter:hover,
+.button-filter:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
