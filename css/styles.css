@@ -112,9 +112,11 @@ a {
 /* Features */
 
 .visually-hidden {
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+    position: absolute; 
+    clip: rect(0 0 0 0); 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px;
 }
 
 .feature-list .title {
@@ -214,6 +216,7 @@ a {
 
 .address {
     font-style: normal;
+    font-weight: 400;
 }
 
 .footer .logo-studio {
@@ -224,12 +227,11 @@ a {
     color: var(--primary-white-color);
 }
 
-.footer .contacts {
+.footer-contacts {
     color: var(--secondary-text-color);
-    font-weight: 400;
 }
 
-.footer .contacts:hover,
-.footer .contacts:focus {
+.footer-contacts:hover,
+.footer-contacts:focus {
     color: var(--accent-color);
 }
